@@ -4,7 +4,8 @@
   "description": "Portal DevJobs con NodeJS, Handlebars y, Mongoose",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index"
+    "start": "nodemon ./index",
+    "css": "postcss public/css/tailwind.css -o public/css/app.css --watch"
   },
   "author": "Ricardo Pacheco",
   "license": "ISC",
@@ -13,6 +14,10 @@
     "express-handlebars": "^6.0.6"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "autoprefixer": "^10.4.8",
+    "nodemon": "^2.0.19",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.1.8"
   }
 }
