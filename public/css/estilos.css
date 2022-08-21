@@ -50,10 +50,10 @@ h3 {
     transition: background-color .3s ease-out;
     display: block;
     border:none;
-    -webkit-border-radius: .6rem;
-    -moz-border-radius: .6rem;
-    -ms-border-radius: .6rem;
-    -o-border-radius: .6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
 }
 .btn-verde {
     background-color: #00C897;
