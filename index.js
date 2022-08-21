@@ -13,4 +13,7 @@ app.use(express.static("public"));
 
 app.use("/", router());
 
-app.listen(5000);
+const port = 5000;
+app.listen(port, () => {
+    console.log(`http://localhost:${port}/ Server is listening on port ${port}`)
+});

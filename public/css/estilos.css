@@ -42,7 +42,7 @@ h3 {
 .btn {
     font-size: 1.8rem;
     padding: 1.4rem 6rem;
-    border-radius: .6rem;
+    border-radius: 0.6rem;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -50,6 +50,10 @@ h3 {
     transition: background-color .3s ease-out;
     display: block;
     border:none;
+    -webkit-border-radius: .6rem;
+    -moz-border-radius: .6rem;
+    -ms-border-radius: .6rem;
+    -o-border-radius: .6rem;
 }
 .btn-verde {
     background-color: #00C897;
@@ -121,10 +125,10 @@ h3 {
     }
 }
 .buscador input[type="text"] {
-    background-color: rgba(255,255,255,.1);
+    background-color: #ffffff1a;
     width: 100%;
     border: none;
-    padding: .5rem 4rem .5rem 2rem;
+    padding: 0.5rem 4rem 0.5rem 2rem;
     height: 5rem;
     border-radius: 1rem;
     color: white;
