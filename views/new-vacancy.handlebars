@@ -1,0 +1,33 @@
+<main class="max-w-[1200px] mx-auto my-0">
+    <form action="/vacancies/new" method="POST" class="max-w-[800px] mt-16 mx-auto">
+        <h3 class="text-slate-600 font-bold m-0 mb-12 text-5xl uppercase">Información General</h3>
+
+        <div class="mb-12 flex md:w-auto">
+            <label for="" class="flex-auto w-1/4 pt-4 text-3xl text-white font-bold uppercase">Titulo</label>
+            <input type="text" name="title" class="h-16 p-4 text-3xl rounded-2xl border-none outline-none w-3/4" placeholder="Ej: React Developer" required>
+        </div>
+        <div class="mb-12 flex md:w-auto">
+            <label for="" class="block w-1/4 pt-4 text-3xl text-white font-bold uppercase">Empresa</label>
+            <input type="text" name="company" class="h-16 p-4 text-3xl rounded-2xl border-none outline-none w-3/4" placeholder="Empresa que contrata" required>
+        </div>
+        <div class="mb-12 flex md:w-auto">
+            <label for="" class="block w-1/4 pt-4 text-3xl text-white font-bold uppercase">Ubicación</label>
+            <input type="text" name="location" class="h-16 p-4 text-3xl rounded-2xl border-none outline-none w-3/4" placeholder="Ej: Colombia o Remoto" required>
+        </div>
+        <div class="mb-12 flex md:w-auto">
+            <label for="" class="block w-1/4 pt-4 text-3xl text-white font-bold uppercase">Salario (USD)</label>
+            <input type="text" name="salary" class="h-16 p-4 text-3xl rounded-2xl border-none outline-none w-3/4" placeholder="Ej: $500 USD" required>
+        </div>
+        <div class="mb-12 flex md:w-auto">
+            <label for="" class="block w-1/4 pt-4 text-3xl text-white font-bold uppercase">Contrato</label>
+            <select name="agreement" class="h-16 p-4 text-3xl rounded-2xl border-none outline-none w-3/4">
+                <option value="" disabled selected>-- Selecciona --</option>
+                <option value="freelance">Freelance</option>
+                <option value="fulltime">Tiempo Completo</option>
+                <option value="halftime">Medio Tiempo</option>
+                <option value="byproject">Por Proyecto</option>
+            </select>
+        </div>
+        <h3 class="text-slate-600 font-bold m-0 text-3xl">Descripción del puesto</h3>
+    </form>
+</main>
