@@ -31,7 +31,19 @@
         <h3 class="text-slate-600 font-bold m-0 text-3xl">Descripción del puesto</h3>
         <div class="flex flex-col mb-8">
             <label class="flex-auto w-1/4 text-xl text-white font-bold uppercase mb-3">Descripción</label>
+            <input type="hidden" id="x" name="description" class="mb-3 rounded">
             <trix-editor class="trix-editor text-slate-800 bg-slate-50 h-96" input="x"></trix-editor>
         </div>
+        <h3 class="text-slate-600 font-bold m-0 text-3xl">Conocimientos</h3>
+        <ul class="list-none p-0 flex justify-between flex-wrap">
+            {{#selectedSkills a}}
+            {{/selectedSkills}}
+        </ul>
+
+        <div class="mb-3 flex justify-center">
+            <input type="submit" value="Publicar" class="text-xl my-5 py-3 px-16 rounded-lg text-white font-bold uppercase no-underline block border-none transition bg-sky-500 hover:bg-sky-600">
+        </div>
     </form>
+
+    <script src="/js/skill.js"></script>
 </main>

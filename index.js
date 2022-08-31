@@ -16,7 +16,14 @@ require("dotenv").config({ path: "vars.env" });
 const app = express();
 
 // * Habilitar handlebars como view
-app.engine("handlebars", exphbs.engine({ defaultLayout: "layout" }));
+app.engine("handlebars", 
+  exphbs.engine(
+    { 
+      defaultLayout: "layout",
+      
+      // * Agregando los helpers
+      helpers: require("./helpers/skills")
+    }));
 app.set("view engine", "handlebars");
 
 // *Almacenando la sesión de MongoDB
