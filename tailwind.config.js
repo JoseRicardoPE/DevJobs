@@ -8,7 +8,7 @@ module.exports = {
       },
       backgroundImage: {
         "loupe": "url('/img/lupa.png')",
-      }
+      },
     },
   },
   plugins: [],

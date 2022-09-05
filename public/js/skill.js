@@ -15,7 +15,7 @@
   \***************************/
 /***/ ((module) => {
 
-eval("module.exports = {\r\n    selectedSkills: (selected = [], options) => {\r\n        let skills = ['HTML5', 'CSS3', 'CSSGrid', 'Flexbox', 'JavaScript', 'JQuery', 'NodeJS', \r\n        'Angular', 'VueJS', 'ReactJS', 'React Hooks', 'Redux', 'Apolo', 'GraphQL', 'TypeScript', \r\n        'PHP', 'Laravel', 'Symfony', 'Python', 'Django', 'ORM', 'Sequelize', 'Mongoose', 'SQL', \r\n        'MVC', 'SASS', 'WordPress', 'TailWindCSS'];\r\n\r\n        let html = \"\";\r\n        skills.forEach(skill => {\r\n            html += `<li class=\"text-white font-semibold flex flex-auto justify-center items-center border border-lime-300 rounded-lg px-3 py-2 hover:cursor-pointer\">${skill}</li>`\r\n        });\r\n        return options.fn().html = html;\r\n    }\r\n}\n\n//# sourceURL=webpack://devjobs/./helpers/skills.js?");
+eval("module.exports = {\r\n    selectedSkills: (selected = [], options) => {\r\n        let skills = ['HTML5', 'CSS3', 'CSSGrid', 'Flexbox', 'JavaScript', 'JQuery', 'NodeJS', \r\n        'Angular', 'VueJS', 'ReactJS', 'React Hooks', 'Redux', 'Apolo', 'GraphQL', 'TypeScript', \r\n        'PHP', 'Laravel', 'Symfony', 'Python', 'Django', 'ORM', 'Sequelize', 'Mongoose', 'SQL', \r\n        'MVC', 'SASS', 'WordPress', 'TailWindCSS'];\r\n\r\n        let html = \"\";\r\n        skills.forEach(skill => {\r\n            html += `\r\n                <li class=\"text-white font-semibold flex flex- justify-center items-center border border-lime-300 rounded-lg px-3 py-2 hover:cursor-pointer\">${skill}</li>\r\n            `;\r\n        });\r\n        return options.fn().html = html;\r\n    }\r\n}\n\n//# sourceURL=webpack://devjobs/./helpers/skills.js?");
 
 /***/ })
 

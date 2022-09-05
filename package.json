@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon ./index",
     "css": "postcss public/css/tailwind.css -o public/css/app.css --watch",
-    "js": "webpack --watch"
+    "js": "webpack --watch",
+    "dev": "concurrently \"npm run css\" \"npm run js\" "
   },
   "author": "Ricardo Pacheco",
   "license": "ISC",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
+    "concurrently": "^7.3.0",
     "nodemon": "^2.0.19",
     "postcss": "^8.4.16",
     "postcss-cli": "^10.0.0",
